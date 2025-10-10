@@ -1,0 +1,31 @@
+2025-10-08 18:02:33,887 - dashboard.dashboard_config - INFO - Using default configuration
+2025-10-08 18:02:33,888 - data_collector - INFO - Twitter API initialized successfully
+2025-10-08 18:02:33,888 - data_collector - INFO - Google News API initialized successfully
+2025-10-08 18:02:36,419 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-10-08 18:02:36,420 - openai._base_client - INFO - Retrying request to /chat/completions in 0.437227 seconds
+2025-10-08 18:02:37,172 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-10-08 18:02:37,173 - openai._base_client - INFO - Retrying request to /chat/completions in 0.891073 seconds
+2025-10-08 18:02:38,438 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-10-08 18:02:38,440 - sentiment_analyzer - WARNING - OpenAI API rate limit reached during connection test
+2025-10-08 18:02:38,440 - alert_system - INFO - Slack webhook initialized successfully
+2025-10-08 18:02:38,462 - dashboard.main_dashboard - INFO - Starting Strategic Intelligence Dashboard on http://127.0.0.1:5000
+2025-10-08 18:02:38,526 - werkzeug - WARNING -  * Debugger is active!
+2025-10-08 18:02:38,536 - werkzeug - INFO -  * Debugger PIN: 146-737-174
+2025-10-08 18:02:38,955 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2025 18:02:38] "GET / HTTP/1.1" 200 -
+2025-10-08 18:02:39,321 - data_collector - INFO - Starting data collection for 5 queries
+2025-10-08 18:02:39,321 - data_collector - INFO - Processing query: artificial intelligence trends
+2025-10-08 18:02:39,321 - data_collector - INFO - Collecting tweets for query: artificial intelligence trends
+2025-10-08 18:02:39,370 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2025 18:02:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-08 18:02:40,042 - data_collector - WARNING - Twitter API rate limit reached, waiting...
+2025-10-08 18:02:41,044 - data_collector - INFO - Collecting news for query: artificial intelligence trends
+2025-10-08 18:03:14,103 - werkzeug - INFO - 127.0.0.1 - - [08/Oct/2025 18:03:14] "[33mGET /api/export_report?time_range=7d&sentiment_filter=all&data_sources=all&competitors=all HTTP/1.1[0m" 404 -
+2025-10-08 18:03:52,200 - data_collector - INFO - Collected 100 news articles via GNews
+2025-10-08 18:03:53,203 - data_collector - INFO - Processing query: market analysis
+2025-10-08 18:03:54,467 - data_collector - INFO - Collecting tweets for query: market analysis
+2025-10-08 18:03:54,756 - data_collector - WARNING - Twitter API rate limit reached, waiting...
+2025-10-08 18:03:55,757 - data_collector - INFO - Collecting news for query: market analysis
+2025-10-08 18:04:58,095 - data_collector - INFO - Collected 100 news articles via GNews
+2025-10-08 18:04:59,096 - data_collector - INFO - Processing query: competitor intelligence
+2025-10-08 18:04:59,096 - data_collector - INFO - Collecting tweets for query: competitor intelligence
+2025-10-08 18:04:59,345 - data_collector - WARNING - Twitter API rate limit reached, waiting...
+2025-10-08 18:05:00,345 - data_collector - INFO - Collecting news for query: competitor intelligence

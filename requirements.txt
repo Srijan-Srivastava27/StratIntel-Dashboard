@@ -1,0 +1,50 @@
+# Core dependencies
+python-dotenv==1.1.1      # Loads environment variables from .env file, used for secure configuration management
+requests==2.32.5          # Modern HTTP library for making API calls, supports SSL, sessions, and connection pooling
+pandas==2.1.0             # Data manipulation library, provides DataFrame structure and analysis tools
+numpy==1.24.3             # Scientific computing library, provides array operations and mathematical functions
+
+# AI/ML libraries 
+openai==1.109.0          # Official OpenAI API client, used for GPT model interactions and AI completions
+transformers==4.56.2     # Hugging Face NLP library, provides pre-trained models for text analysis
+torch==2.8.0             # PyTorch deep learning framework, required for transformers and custom models
+scikit-learn==1.7.2      # Machine learning toolkit, used for clustering, classification, and text vectorization
+
+# Data processing
+streamz==0.6.4           # Provides streaming data processing capabilities for real-time analysis
+kafka-python==2.2.15     # Apache Kafka client, enables message queue integration for data streaming
+
+# APIs
+tweepy==4.16.0           # Twitter/X API client, handles authentication and rate limiting
+slack-webhook==1.0.7     # Simple Slack integration via webhooks for notifications
+slack-sdk==3.36.0        # Full Slack API client for advanced bot functionality
+
+# Development tools
+pytest==8.4.2            # Testing framework with fixture support and rich assertions
+black==25.9.0            # Opinionated code formatter for consistent Python style
+flake8==7.3.0            # Linter combining pyflakes, pycodestyle, and mccabe
+jupyter==1.1.1           # Interactive development environment for data analysis
+
+# Visualization
+matplotlib==3.10.6       # Core plotting library for static visualizations
+seaborn==0.13.2         # Statistical visualization built on matplotlib
+plotly==6.3.0           # Interactive visualization library for web-based charts
+wordcloud==1.9.4        # Generates word clouds from text data for trend visualization
+
+# News collection
+gnews==0.3.7            # Google News API wrapper for news article retrieval
+feedparser==6.0.10      # Universal feed parser for RSS and Atom feeds
+beautifulsoup4==4.12.2  # HTML parser for web scraping and data extraction
+
+# Web Framework & Dashboard
+flask==3.1.2            # Lightweight web framework for API and dashboard backend
+dash==3.2.0            # React-based framework for analytical web applications
+dash-bootstrap-components==2.0.4  # Bootstrap components for responsive Dash layouts
+
+# Additional utilities
+Pillow==10.0.0         # Python Imaging Library for image processing tasks
+python-dateutil==2.8.2 # Extensions to Python datetime module
+PyYAML==6.0.1         # YAML parser and emitter for configuration files
+
+# Dashboard Framework
+streamlit==1.50.0      # Rapid dashboard development framework with auto-reloading

@@ -1,0 +1,39 @@
+apis:
+  twitter:
+    # Base URL for Twitter API v2 endpoints
+    base_url: "https://api.twitter.com/2"
+    rate_limits:
+      # Maximum number of tweet retrievals allowed in 15-minute window
+      tweets_per_15min: 300
+      # Maximum number of API requests allowed in 15-minute window
+      requests_per_15min: 300
+    
+  openai:
+    # OpenAI API endpoint for all GPT interactions
+    base_url: "https://api.openai.com/v1"
+    models:
+      # Primary language model for sentiment analysis and trend detection
+      primary: "gpt-3.5-turbo"
+      # Fallback model if primary is unavailable
+      fallback: "gpt-3.5-turbo-0301"
+    rate_limits:
+      # Maximum API requests per minute to avoid throttling
+      requests_per_minute: 60
+      # Maximum tokens processed per minute across all requests
+      tokens_per_minute: 60000
+
+  news:
+    # List of enabled news data sources
+    sources:
+      - "google_news"    # Google News RSS feeds
+      - "news_api"       # NewsAPI.org integration
+    # Frequency of news data updates in seconds (5 minutes)
+    update_frequency: 300
+
+data_collection:
+  # Number of items to process in each API request batch
+  batch_size: 100
+  # Number of retry attempts for failed API requests
+  retry_attempts: 3
+  # Request timeout in seconds
+  timeout: 30

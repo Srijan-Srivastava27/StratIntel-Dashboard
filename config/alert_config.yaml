@@ -1,0 +1,48 @@
+alerts:
+  thresholds:
+    # Minimum confidence score for sentiment analysis alerts
+    sentiment_confidence: 0.7
+    # Threshold for high market relevance classification
+    market_relevance_high: 0.8
+    # Minimum significance score for trend alerts
+    trend_significance: 0.6
+  
+  severity_levels:
+    high:
+      # Threshold for high-priority alerts (90% confidence)
+      confidence_threshold: 0.9
+      # Market relevance requirement for high severity
+      market_relevance: "high"
+      # Notification channels for high severity alerts
+      actions: ["slack", "email", "dashboard"]
+    
+    medium:
+      # Threshold for medium-priority alerts (60% confidence)
+      confidence_threshold: 0.6
+      # Acceptable market relevance levels for medium severity
+      market_relevance: ["high", "medium"]
+      # Notification channels for medium severity alerts
+      actions: ["slack", "dashboard"]
+    
+    low:
+      # Threshold for low-priority alerts (30% confidence)
+      confidence_threshold: 0.3
+      # Notification channels for low severity alerts
+      actions: ["dashboard"]
+
+slack:
+  channels:
+    # Slack channel for real-time alerts
+    alerts: "#strategic-intelligence-alerts"
+    # Channel for scheduled report distribution
+    reports: "#daily-reports"
+    # Channel for system diagnostics and debugging
+    debug: "#ai-debug"
+  
+  message_format:
+    # Include data visualizations in Slack messages
+    include_charts: true
+    # Maximum message length to avoid clutter
+    max_text_length: 500
+    # Enable emoji usage in messages
+    emoji_enabled: true

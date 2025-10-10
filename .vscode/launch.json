@@ -1,0 +1,88 @@
+{
+    // VS Code launch configuration version
+    "version": "0.2.0",
+    // Debug configurations array
+    "configurations": [
+        {
+            // Configuration name for running the main application
+            "name": "Run Main Script",
+            // Python debugger type
+            "type": "debugpy",
+            // Launch mode (vs attach)
+            "request": "launch",
+            // Main entry point script
+            "program": "${workspaceFolder}/src/main.py",
+            // Use VS Code's integrated terminal
+            "console": "integratedTerminal",
+            // Environment variables for the debug session
+            "env": {
+                // Add src directory to Python path
+                "PYTHONPATH": "${workspaceFolder}/src"
+            },
+            // Load environment variables from .env file
+            "envFile": "${workspaceFolder}/.env",
+            // Set working directory to project root
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            // Configuration for batch processing mode
+            "name": "Run Batch Analysis",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/main.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src",
+                // Enable batch processing mode
+                "RUN_MODE": "batch"
+            },
+            "envFile": "${workspaceFolder}/.env",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            // Test configuration for data collection component
+            "name": "Test Data Collector",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/data_collector.py",
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            // Test configuration for sentiment analysis component
+            "name": "Test Sentiment Analyzer",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/sentiment_analyzer.py",
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            // Test configuration for alert system component
+            "name": "Test Alert System",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/alert_system.py",
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            // Configuration for running test suite
+            "name": "Run Tests",
+            "type": "debugpy",
+            "request": "launch",
+            // Use pytest module
+            "module": "pytest",
+            // Run tests in tests/ directory with verbose output
+            "args": [
+                "tests/",
+                "-v"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

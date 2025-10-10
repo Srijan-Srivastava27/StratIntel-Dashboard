@@ -1,0 +1,62 @@
+{
+    // Specify the path to the Python interpreter in virtual environment
+    "python.defaultInterpreterPath": "./venv/bin/python",
+    // Automatically activate the Python virtual environment in terminal
+    "python.terminal.activateEnvironment": true,
+    // Enable pytest as the testing framework
+    "python.testing.pytestEnabled": true,
+    // Configure pytest to look for tests in the tests directory
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    // Disable alternative testing frameworks
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    // Enable code linting for Python files
+    "python.linting.enabled": true,
+    // Use flake8 as the primary linter
+    "python.linting.flake8Enabled": true,
+    // Disable pylint to avoid conflicts with flake8
+    "python.linting.pylintEnabled": false,
+    // Use black as the Python code formatter
+    "python.formatting.provider": "black",
+    // Configure black with a max line length of 88 characters
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "88"
+    ],
+    // Configure isort to be compatible with black formatting
+    "python.sortImports.args": [
+        "--profile",
+        "black"
+    ],
+    // Hide common Python cache and virtual environment files
+    "files.exclude": {
+        "**/__pycache__": true, // Python bytecode cache
+        "**/*.pyc": true, // Compiled Python files
+        "**/.pytest_cache": true, // Pytest cache directory
+        "**/venv": true, // Virtual environment
+        "**/.env": false // Show .env files for editing
+    },
+    // Associate file extensions with language types
+    "files.associations": {
+        "*.env": "dotenv" // Treat .env files as environment files
+    },
+    // Enable automatic formatting when saving files
+    "editor.formatOnSave": true,
+    // Configure actions to perform on save
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit" // Organize imports on save
+    },
+    // Python-specific editor settings
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    // Jupyter notebook settings
+    "jupyter.askForKernelRestart": false, // Don't prompt for kernel restart
+    "jupyter.interactiveWindow.textEditor.executeSelection": true // Allow executing selected code
+}

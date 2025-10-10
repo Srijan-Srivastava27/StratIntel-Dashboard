@@ -1,0 +1,10 @@
+2025-10-07 17:17:22,795 - dashboard.dashboard_config - INFO - Loaded configuration from dashboard\config\dashboard_config.yaml
+2025-10-07 17:17:22,819 - data_collector - INFO - Twitter API initialized successfully
+2025-10-07 17:17:22,819 - data_collector - WARNING - GNews package not available
+2025-10-07 17:17:22,820 - sentiment_analyzer - ERROR - OpenAI package not available
+2025-10-07 17:17:22,820 - alert_system - INFO - Slack webhook initialized successfully
+2025-10-07 17:17:22,831 - dashboard.main_dashboard - INFO - Starting Strategic Intelligence Dashboard on http://127.0.0.1:5000
+2025-10-07 17:17:23,203 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-07 17:17:23,227 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-07 17:17:23,413 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)

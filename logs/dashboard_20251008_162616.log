@@ -1,0 +1,15 @@
+2025-10-08 16:26:39,102 - dashboard.dashboard_config - INFO - Loaded configuration from dashboard\config\dashboard_config.yaml
+2025-10-08 16:26:39,171 - data_collector - INFO - Twitter API initialized successfully
+2025-10-08 16:26:39,172 - data_collector - INFO - Google News API initialized successfully
+2025-10-08 16:26:47,894 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-10-08 16:26:47,907 - openai._base_client - INFO - Retrying request to /chat/completions in 0.475125 seconds
+2025-10-08 16:26:48,878 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-10-08 16:26:48,880 - openai._base_client - INFO - Retrying request to /chat/completions in 0.812407 seconds
+2025-10-08 16:26:50,108 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-10-08 16:26:50,183 - sentiment_analyzer - WARNING - OpenAI API rate limit reached during connection test
+2025-10-08 16:26:50,183 - alert_system - INFO - Slack webhook initialized successfully
+2025-10-08 16:26:50,249 - dashboard.main_dashboard - INFO - Starting Strategic Intelligence Dashboard on http://127.0.0.1:5000
+2025-10-08 16:26:50,573 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-08 16:26:50,574 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-08 16:26:50,774 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)

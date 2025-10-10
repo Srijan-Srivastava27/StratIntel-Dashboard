@@ -1,0 +1,4 @@
+2025-10-08 17:59:17,145 - dashboard.dashboard_config - INFO - Using default configuration
+2025-10-08 17:59:17,157 - data_collector - INFO - Twitter API initialized successfully
+2025-10-08 17:59:17,157 - data_collector - WARNING - GNews package not available
+2025-10-08 17:59:17,157 - root - ERROR - Dashboard startup error: name 'SentimentAnalyzer' is not defined
