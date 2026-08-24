@@ -101,6 +101,6 @@ This project is licensed under the MIT License.
 
 - Infosys Virtual Internship & mentors
 - OpenAI API, Plotly, Flask community
-- All contributors
+  
 
 ---
